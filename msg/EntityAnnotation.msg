@@ -1,0 +1,12 @@
+string mid
+string locale
+string description
+bool has_score
+float32 score
+bool has_confidence
+float32 confidence
+bool has_topicality
+float32 topicality
+google_cloud_vision_msgs/BoundingPoly bounding_poly
+google_cloud_vision_msgs/LocationInfo[] locations
+google_cloud_vision_msgs/Property[] properties

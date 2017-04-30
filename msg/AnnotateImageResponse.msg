@@ -1,0 +1,12 @@
+#google_cloud_vision_msgs/FaceAnnotation[] face_annotations
+google_cloud_vision_msgs/EntityAnnotation[] landmark_annotations
+google_cloud_vision_msgs/EntityAnnotation[] logo_annotations
+google_cloud_vision_msgs/EntityAnnotation[] label_annotations
+google_cloud_vision_msgs/EntityAnnotation[] text_annotations
+#google_cloud_vision_msgs/TextAnnotation full_text_annotation
+#google_cloud_vision_msgs/SafeSearchAnnotation safe_search_annotation
+#google_cloud_vision_msgs/ImageProperties image_properties_annotation
+#google_cloud_vision_msgs/CropHintsAnnotation crop_hints_annotation
+#google_cloud_vision_msgs/WebDetection web_detection
+bool has_error
+google_cloud_vision_msgs/Status error
