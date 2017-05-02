@@ -2,4 +2,3 @@ google_cloud_vision_msgs/Image image
 google_cloud_vision_msgs/Feature[] features
 bool has_image_context
 google_cloud_vision_msgs/ImageContext image_context
-uint32 http_timeout
