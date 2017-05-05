@@ -1,0 +1,22 @@
+uint8 OK = 0
+uint8 CANCELLED = 1
+uint8 UNKNOWN = 2
+uint8 INVALID_ARGUMENT = 3
+uint8 DEADLINE_EXCEEDED = 4
+uint8 NOT_FOUND = 5
+uint8 ALREADY_EXISTS = 6
+uint8 PERMISSION_DENIED = 7
+uint8 UNAUTHENTICATED = 8
+uint8 RESOURCE_EXHAUSTED = 9
+uint8 FAILED_PRECONDITION = 10
+uint8 ABORTED = 11
+uint8 OUT_OF_RANGE = 12
+uint8 UNIMPLEMENTED = 13
+uint8 INTERNAL = 14
+uint8 UNAVAILABLE = 15
+uint8 DATA_LOSS = 16
+
+bool has_code
+uint8 code
+string message
+string details
