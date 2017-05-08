@@ -7,7 +7,6 @@
 #include <vector>
 
 #include <boost/archive/iterators/base64_from_binary.hpp>
-#include <boost/archive/iterators/insert_linebreaks.hpp>
 #include <boost/archive/iterators/transform_width.hpp>
 #include <boost/cstdint.hpp>
 #include <boost/shared_ptr.hpp>
@@ -26,9 +25,7 @@ namespace google_cloud_vision_msgs {
 static inline void encode(const std::vector< boost::uint8_t > &from, Image &to) {
   namespace bai = boost::archive::iterators;
   typedef std::vector< boost::uint8_t >::const_iterator Iterator;
-  typedef bai::insert_linebreaks< bai::base64_from_binary< bai::transform_width< Iterator, 6, 8 > >,
-                                  72 >
-      Base64Encoder;
+  typedef bai::base64_from_binary< bai::transform_width< Iterator, 6, 8 > > Base64Encoder;
 
   to = Image();
   std::copy(Base64Encoder(from.begin()), Base64Encoder(from.end()), std::back_inserter(to.content));
@@ -55,9 +52,7 @@ static inline void encode(const sensor_msgs::Image &from, Image &to) {
 static inline void encode(std::istream &from, Image &to) {
   namespace bai = boost::archive::iterators;
   typedef std::istreambuf_iterator< char > Iterator;
-  typedef bai::insert_linebreaks< bai::base64_from_binary< bai::transform_width< Iterator, 6, 8 > >,
-                                  72 >
-      Base64Encoder;
+  typedef bai::base64_from_binary< bai::transform_width< Iterator, 6, 8 > > Base64Encoder;
 
   to = Image();
   std::istreambuf_iterator< char > begin(from), end;
