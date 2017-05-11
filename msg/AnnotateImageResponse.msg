@@ -1,4 +1,4 @@
-#google_cloud_vision_msgs/FaceAnnotation[] face_annotations
+google_cloud_vision_msgs/FaceAnnotation[] face_annotations
 google_cloud_vision_msgs/EntityAnnotation[] landmark_annotations
 google_cloud_vision_msgs/EntityAnnotation[] logo_annotations
 google_cloud_vision_msgs/EntityAnnotation[] label_annotations
